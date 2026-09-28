@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Studiva | منصة دروس تعليمية</title>
+
+
+    <!-- =========================
+         WhatsApp / Facebook Preview
+         ========================= -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:title"
+          content="Studiva | منصة دروس تعليمية">
+
+    <meta property="og:description"
+          content="منصة دروس تعليمية تساعدك على التعلم وتطوير مهاراتك">
+
+    <meta property="og:image"
+          content="https://i.postimg.cc/PJfPrGSb/1000485134-removebg-preview.png">
+
+    <meta property="og:image:secure_url"
+          content="https://i.postimg.cc/PJfPrGSb/1000485134-removebg-preview.png">
+
+    <meta property="og:image:type"
+          content="image/png">
+
+    <meta property="og:site_name"
+          content="Studiva">
+
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Studiva | منصة دروس تعليمية">
+
+    <meta name="twitter:description"
+          content="ابدأ رحلتك التعليمية مع Studiva">
+
+    <meta name="twitter:image"
+          content="https://i.postimg.cc/PJfPrGSb/1000485134-removebg-preview.png">
+
+
+    <!-- =========================
+         التصميم
+         ========================= -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            font-family:
+                Tahoma,
+                Arial,
+                sans-serif;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 10%,
+                    rgba(44, 111, 235, 0.14),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 90% 90%,
+                    rgba(105, 75, 220, 0.12),
+                    transparent 32%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #f8fbff,
+                    #edf4ff
+                );
+
+            color: #172033;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 20px;
+
+        }
+
+
+        .container {
+
+            width: 100%;
+
+            max-width: 470px;
+
+            text-align: center;
+
+        }
+
+
+        /* اسم المنصة */
+
+        .brand {
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            color: #2469d8;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* الكارت */
+
+        .card {
+
+            background:
+                rgba(255,255,255,0.96);
+
+            border-radius: 30px;
+
+            padding:
+                32px
+                24px
+                28px;
+
+            box-shadow:
+
+                0 20px 60px
+                rgba(25,70,130,0.14);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.9);
+
+        }
+
+
+        /* اللوجو */
+
+        .logo-box {
+
+            width: 165px;
+
+            height: 165px;
+
+            margin:
+                0 auto
+                22px;
+
+            padding: 10px;
+
+            background: white;
+
+            border-radius: 30px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            box-shadow:
+
+                0 12px 35px
+                rgba(30,80,150,0.15);
+
+        }
+
+
+        .logo {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: contain;
+
+            border-radius: 20px;
+
+        }
+
+
+        /* العنوان */
+
+        h1 {
+
+            margin: 0;
+
+            color: #12356b;
+
+            font-size: 29px;
+
+            line-height: 1.5;
+
+        }
+
+
+        /* الوصف */
+
+        .subtitle {
+
+            margin:
+
+                8px
+                0
+                18px;
+
+            color: #2871dc;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+        }
+
+
+        /* الخط */
+
+        .line {
+
+            width: 65px;
+
+            height: 4px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #2879ed,
+                    #6048d8
+                );
+
+            border-radius: 20px;
+
+            margin:
+                14px
+                auto
+                18px;
+
+        }
+
+
+        /* الوصف الرئيسي */
+
+        .description {
+
+            margin:
+
+                0 auto
+                25px;
+
+            max-width: 380px;
+
+            color: #667085;
+
+            font-size: 15px;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* زر التسجيل */
+
+        .register-button {
+
+            width: 100%;
+
+            min-height: 60px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #347ff0,
+                    #245cdb
+                );
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 17px;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            box-shadow:
+
+                0 12px 28px
+                rgba(35,100,220,0.28);
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .register-button:hover {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+
+                0 16px 32px
+                rgba(35,100,220,0.34);
+
+        }
+
+
+        .register-button:active {
+
+            transform:
+                translateY(0);
+
+        }
+
+
+        .download-icon {
+
+            font-size: 27px;
+
+            line-height: 1;
+
+        }
+
+
+        /* رسالة التثبيت */
+
+        .install-message {
+
+            margin-top: 18px;
+
+            color: #163f79;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* معلومات التطبيق */
+
+        .app-info {
+
+            margin-top: 10px;
+
+            color: #98a2b3;
+
+            font-size: 12px;
+
+        }
+
+
+        /* المميزات */
+
+        .features {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 10px;
+
+            margin-top: 25px;
+
+        }
+
+
+        .feature {
+
+            background: #f7faff;
+
+            border-radius: 16px;
+
+            padding: 15px 8px;
+
+            border:
+                1px solid
+                #edf2f8;
+
+        }
+
+
+        .feature-icon {
+
+            font-size: 25px;
+
+            display: block;
+
+            margin-bottom: 7px;
+
+        }
+
+
+        .feature-text {
+
+            color: #52627a;
+
+            font-size: 12px;
+
+            line-height: 1.6;
+
+            font-weight: bold;
+
+        }
+
+
+        /* الحقوق */
+
+        footer {
+
+            margin-top: 20px;
+
+            color: #8a94a6;
+
+            font-size: 12px;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* الموبايل */
+
+        @media (max-width: 420px) {
+
+            body {
+
+                padding: 15px;
+
+            }
+
+
+            .card {
+
+                padding:
+                    27px
+                    19px
+                    24px;
+
+            }
+
+
+            .logo-box {
+
+                width: 140px;
+
+                height: 140px;
+
+            }
+
+
+            h1 {
+
+                font-size: 25px;
+
+            }
+
+
+            .subtitle {
+
+                font-size: 16px;
+
+            }
+
+
+            .description {
+
+                font-size: 14px;
+
+            }
+
+
+            .register-button {
+
+                font-size: 18px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- اسم المنصة -->
+
+        <div class="brand">
+
+            Studiva
+
+        </div>
+
+
+        <div class="card">
+
+
+            <!-- اللوجو -->
+
+            <div class="logo-box">
+
+                <img
+
+                    class="logo"
+
+                    src="https://i.postimg.cc/PJfPrGSb/1000485134-removebg-preview.png"
+
+                    alt="Studiva"
+
+                    loading="eager"
+
+                >
+
+            </div>
+
+
+            <!-- العنوان -->
+
+            <h1>
+
+                Studiva
+
+            </h1>
+
+
+            <div class="subtitle">
+
+                منصة دروس تعليمية
+
+            </div>
+
+
+            <div class="line"></div>
+
+
+            <!-- الوصف -->
+
+            <p class="description">
+
+                منصة تعليمية متكاملة تساعدك على التعلم
+
+                وتطوير مهاراتك في جميع المواد الدراسية
+
+                بأسلوب سهل وممتع.
+
+            </p>
+
+
+            <!-- زر التسجيل / التنزيل -->
+
+            <a
+
+                class="register-button"
+
+                href="app.apk"
+
+                download="Studiva.apk"
+
+            >
+
+                <span class="download-icon">
+
+                    ↓
+
+                </span>
+
+                <span>
+
+                    سجل الآن
+
+                </span>
+
+            </a>
+
+
+            <!-- رسالة التثبيت -->
+
+            <div class="install-message">
+
+                قم بتثبيت التطبيق لتبدأ رحلتك نحو التقدم
+
+            </div>
+
+
+            <div class="app-info">
+
+                تطبيق Android • ملف APK
+
+            </div>
+
+
+            <!-- المميزات -->
+
+            <div class="features">
+
+
+                <div class="feature">
+
+                    <span class="feature-icon">
+
+                        📚
+
+                    </span>
+
+                    <span class="feature-text">
+
+                        جميع المراحل الدراسية
+
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span class="feature-icon">
+
+                        👨‍🏫
+
+                    </span>
+
+                    <span class="feature-text">
+
+                        معلمين متخصصين
+
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span class="feature-icon">
+
+                        💡
+
+                    </span>
+
+                    <span class="feature-text">
+
+                        شرح سهل وتفاعلي
+
+                    </span>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <span class="feature-icon">
+
+                        📈
+
+                    </span>
+
+                    <span class="feature-text">
+
+                        تابع تقدمك باستمرار
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <footer>
+
+            جميع الحقوق محفوظة © Studiva
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>
